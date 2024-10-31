@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Cairo', sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: darkgrey lightgrey;
+}
+
+.active {
+    background-color: orange;
+    color: white;
+}
+
+.progress span::before {
+    content: attr(parcent);
+    position: absolute;
+    width: fit-content;
+    height: 25px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    top: -28px;
+    left: 96.5%;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
